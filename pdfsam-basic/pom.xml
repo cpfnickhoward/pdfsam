@@ -37,7 +37,7 @@
                 </property>
             </activation>
             <build>
-                <plugins>
+            <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-jar-plugin</artifactId>
@@ -691,7 +691,19 @@
                 </excludes>
             </resource>
         </resources>
-    </build>
+        <plugins>
+            <!-- Exec plugin to run the main class -->
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.5.0</version>
+            <configuration>
+                <executable>java</executable>
+                <commandlineArgs>--enable-preview -cp %classpath org.pdfsam.basic.App</commandlineArgs>
+            </configuration>
+        </plugin>
+        </plugins>
+        </build>
 
     <dependencies>
         <dependency>
