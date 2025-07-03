@@ -27,7 +27,7 @@ import static org.sejda.commons.util.RequireUtils.requireNotBlank;
  */
 public record UpdateAvailableEvent(String availableVersion) {
 
-    public UpdateAvailableEvent {
-        requireNotBlank(availableVersion, "Available version cannot be empty");
-    }
+     public UpdateAvailableEvent {
+     requireNotBlank(availableVersion, "Available version cannot be empty");
+     }
 }

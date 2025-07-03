@@ -61,7 +61,7 @@ public class UpdatesController {
                 if (isNotBlank(currentVersion)) {
                     if (!appBrand.property(VERSION).equals(currentVersion)) {
                         LOG.info(i18n().tr("PDFsam {0} is available for download", currentVersion));
-                        eventStudio().broadcast(new UpdateAvailableEvent(currentVersion));
+//                        eventStudio().broadcast(new UpdateAvailableEvent(currentVersion));
                     } else if (event.notifyIfNoUpdates()) {
                         eventStudio().broadcast(new NoUpdateAvailable());
                     }
