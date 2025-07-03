@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Main-Class: org.pdfsam.gui.PdfsamApp
+Class-Path: javafx-media-23.0.2.jar commons-io-2.19.0.jar common-lang-3.
+ 11.0.jar slf4j-tinylog-2.7.0.jar bcprov-jdk18on-1.80.jar imageio-metada
+ ta-3.11.0.jar slf4j-api-2.0.17.jar jackson-databind-2.18.3.jar bcmail-j
+ dk18on-1.80.jar javafx-graphics-23.0.2.jar ikonli-javafx-12.4.0.jar sej
+ da-conversion-5.1.10.jar sejda-image-writers-5.1.10.jar jakarta.inject-
+ api-2.0.1.jar fontbox-2.0.28.jar javafx-controls-23.0.2.jar imageio-cor
+ e-3.11.0.jar junit-platform-commons-1.12.2.jar javafx-base-23.0.2.jar s
+ ejda-model-5.1.10.jar commons-lang3-3.17.0.jar ikonli-core-12.4.0.jar j
+ ackson-annotations-2.18.3.jar javafx-base-23.0.2-win.jar apiguardian-ap
+ i-1.1.2.jar jakarta.validation-api-3.0.2.jar jakarta.el-4.0.2.jar javaf
+ x-swing-23.0.2-win.jar sejda-sambox-5.1.10.jar jboss-logging-3.4.1.Fina
+ l.jar imageio-tiff-3.11.0.jar jcl-over-slf4j-2.0.17.jar jackson-core-2.
+ 18.3.jar thumbnailator-0.4.20.jar hibernate-validator-7.0.5.Final.jar t
+ inylog-api-2.7.0.jar icu4j-71.1.jar bcutil-jdk18on-1.80.jar sejda-core-
+ 5.1.10.jar javafx-swing-23.0.2.jar opentest4j-1.3.0.jar common-image-3.
+ 11.0.jar ikonli-unicons-pack-12.4.0.jar common-io-3.11.0.jar metadata-e
+ xtractor-2.19.0.jar jackson-datatype-jsr310-2.18.3.jar junit-platform-e
+ ngine-1.12.2.jar junit-jupiter-api-5.12.2.jar ikonli-boxicons-pack-12.4
+ .0.jar jakarta.el-api-4.0.0.jar sambox-3.0.23.jar javafx-controls-23.0.
+ 2-win.jar sejda-fonts-5.1.10.jar bcpkix-jdk18on-1.80.jar junit-jupiter-
+ engine-5.12.2.jar sejda-io-4.0.0.M4.jar sejda-commons-3.0.0.jar classma
+ te-1.5.1.jar imageio-jpeg-3.11.0.jar pdfsam-injector-5.0.0.jar tinylog-
+ impl-2.7.0.jar eventstudio-4.0.1.jar javafx-media-23.0.2-win.jar javafx
+ -graphics-23.0.2-win.jar xmpcore-6.1.11.jar jackson-datatype-jdk8-2.18.
+ 3.jar
+

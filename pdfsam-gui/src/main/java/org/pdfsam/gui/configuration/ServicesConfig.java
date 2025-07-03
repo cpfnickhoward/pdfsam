@@ -53,7 +53,7 @@ import java.util.Arrays;
 /**
  * @author Andrea Vacondio
  */
-@Components({ NewsController.class, PdfLoadController.class, PremiumToolsController.class,
+@Components({ NewsController.class, PdfLoadController.class,
         TaskExecutionController.class, WorkspaceController.class, StageServiceController.class,
         UpdatesController.class })
 public class ServicesConfig {

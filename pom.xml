@@ -46,7 +46,7 @@
                             <excludedGroups>NoHeadless</excludedGroups>
                             <useModulePath>false</useModulePath>
                             <!-- remove this once Foreign Function & Memory API is out of preview-->
-                            <argLine>--enable-preview</argLine>
+<!--                            <argLine>&#45;&#45;enable-preview</argLine>-->
                         </configuration>
                     </plugin>
                 </plugins>
@@ -110,7 +110,7 @@
                         <configuration>
                             <additionalOptions>
                                 <additionalOption>-Xdoclint:none</additionalOption>
-                                <additionalOption>--enable-preview</additionalOption>
+<!--                                <additionalOption>&#45;&#45;enable-preview</additionalOption>-->
                             </additionalOptions>
                             <release>21</release>
                         </configuration>
@@ -215,9 +215,9 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.14.0</version>
                     <configuration>
-                        <release>21</release>
+                        <release>24</release>
                         <!-- remove this once Foreign Function & Memory API is out of preview-->
-                        <compilerArgs>--enable-preview</compilerArgs>
+<!--                        <compilerArgs>&#45;&#45;enable-preview</compilerArgs>-->
                     </configuration>
                 </plugin>
                 <plugin>

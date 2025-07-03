@@ -38,25 +38,25 @@ import static org.pdfsam.i18n.I18nContext.i18n;
 public class PremiumToolsController {
     private static final Logger LOG = LoggerFactory.getLogger(PremiumToolsController.class);
 
-    private final PremiumToolsService service;
+//    private final PremiumToolsService service;
 
-    @Inject
-    PremiumToolsController(PremiumToolsService service) {
-        this.service = service;
-        eventStudio().addAnnotatedListeners(this);
-    }
+//    @Inject
+//    PremiumToolsController(PremiumToolsService service) {
+//        this.service = service;
+//        eventStudio().addAnnotatedListeners(this);
+//    }
 
-    @EventListener
-    public void fetchPremium(FetchPremiumModulesRequest event) {
-        Thread.ofVirtual().name("premium-tools-thread").start(() -> {
-            LOG.debug(i18n().tr("Fetching premium modules"));
-            try {
-                Optional.ofNullable(service.getPremiumTools()).filter(l -> !l.isEmpty()).map(PremiumToolsResponse::new)
-                        .ifPresent(eventStudio()::broadcast);
-
-            } catch (Exception e) {
-                LOG.warn(i18n().tr("Unable to retrieve premium modules"), e);
-            }
-        });
-    }
+//    @EventListener
+//    public void fetchPremium(FetchPremiumModulesRequest event) {
+//        Thread.ofVirtual().name("premium-tools-thread").start(() -> {
+//            LOG.debug(i18n().tr("Fetching premium modules"));
+//            try {
+//                Optional.ofNullable(service.getPremiumTools()).filter(l -> !l.isEmpty()).map(PremiumToolsResponse::new)
+//                        .ifPresent(eventStudio()::broadcast);
+//
+//            } catch (Exception e) {
+//                LOG.warn(i18n().tr("Unable to retrieve premium modules"), e);
+//            }
+//        });
+//    }
 }

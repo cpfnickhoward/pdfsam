@@ -211,7 +211,6 @@
                                         <argument>"./assembled/doc,./assembled/bin/pdfsam.bat,./assembled/LICENSE.txt,./assembled/splash.png"
                                         </argument>
                                         <argument>--java-options</argument>
-                                        <argument>"--enable-preview -Dprism.lcdtext=false -splash:$APPDIR\..\splash.png"</argument>
                                         <argument>--module-path</argument>
 										<argument>"./assembled/lib"</argument>
                                     </arguments>
@@ -589,7 +588,6 @@
                                         <argument>--mac-package-identifier</argument>
                                         <argument>org.pdfsam.basic</argument>
                                         <argument>--java-options</argument>
-                                        <argument>--enable-preview -Dprism.lcdtext=false</argument>
                                         <argument>--module-path</argument>
                                         <argument>./assembled/lib</argument>
                                         <argument>--mac-sign</argument>
@@ -693,31 +691,14 @@
         </resources>
         <plugins>
             <!-- Exec plugin to run the main class -->
-<plugin>
-    <groupId>org.codehaus.mojo</groupId>
-    <artifactId>exec-maven-plugin</artifactId>
-    <version>3.2.0</version> <!-- Using a standard, stable version -->
-    <configuration>
-        <executable>java</executable>
-        <arguments>
-            <!-- 1. JVM Arguments -->
-            <argument>--enable-preview</argument>
-            <argument>--add-opens=javafx.graphics/javafx.stage=ALL-UNNAMED</argument>
-            <argument>--add-opens=javafx.controls/javafx.scene.control=ALL-UNNAMED</argument>
-            <argument>--add-opens=javafx.graphics/com.sun.javafx.tk=ALL-UNNAMED</argument>
-
-            <!-- 2. Classpath Argument -->
-            <argument>-classpath</argument>
-            <classpath /> <!-- This special tag automatically includes all project dependencies -->
-
-            <!-- 3. Main Class Argument -->
-            <argument>org.pdfsam.basic.App</argument>
-        </arguments>
-    </configuration>
-</plugin>
-
-
-
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <mainClass>org.pdfsam.basic.App</mainClass>
+                </configuration>
+            </plugin>
                 </plugins>
     </build>
 
