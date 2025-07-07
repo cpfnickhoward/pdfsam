@@ -37,7 +37,7 @@ import org.pdfsam.injector.Auto;
 import org.pdfsam.model.news.NewImportantNewsEvent;
 import org.pdfsam.model.ui.SetActiveContentItemRequest;
 import org.pdfsam.model.update.NoUpdateAvailable;
-import org.pdfsam.model.update.UpdateAvailableEvent;
+//import org.pdfsam.model.update.UpdateAvailableEvent;
 import org.pdfsam.service.tool.UsageService;
 import org.pdfsam.ui.components.commons.UrlButton;
 import org.pdfsam.ui.components.notification.AddNotificationRequest;
@@ -173,21 +173,21 @@ public class NotificationsController {
     // container.addStickyNotification(i18n().tr("PDFsam worked hard!"), content);
     // }
 
-    @EventListener
-    public void onRemoveRequest(RemoveNotificationRequest event) {
-        container.removeNotification(event.id());
-    }
-
-    @EventListener
-    public void onUpdateAvailable(UpdateAvailableEvent event) {
-        var content = new VBox(buildLabel(i18n().tr("PDFsam {0} is available for download", event.availableVersion()),
-                NotificationType.INFO),
-                UrlButton.styledUrlButton(i18n().tr("Download"), appBrand.property(BrandableProperty.DOWNLOAD_URL),
-                        null));
-        content.getStyleClass().add("notification-container");
-
-        container.addStickyNotification(i18n().tr("New version available"), content);
-    }
+//    @EventListener
+//    public void onRemoveRequest(RemoveNotificationRequest event) {
+//        container.removeNotification(event.id());
+//    }
+//
+////    @EventListener
+////    public void onUpdateAvailable(UpdateAvailableEvent event) {
+////        var content = new VBox(buildLabel(i18n().tr("PDFsam {0} is available for download", event.availableVersion()),
+////                NotificationType.INFO),
+////                UrlButton.styledUrlButton(i18n().tr("Download"), appBrand.property(BrandableProperty.DOWNLOAD_URL),
+////                        null));
+////        content.getStyleClass().add("notification-container");
+////
+////        container.addStickyNotification(i18n().tr("New version available"), content);
+////    }
 
     @EventListener
     public void onNoUpdateAvailable(NoUpdateAvailable event) {

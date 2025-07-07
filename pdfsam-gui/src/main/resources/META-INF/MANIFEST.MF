@@ -4,8 +4,8 @@ Class-Path: javafx-base-23.0.2.jar common-lang-3.11.0.jar bcmail-jdk18on
  -1.80.jar jackson-datatype-jsr310-2.18.3.jar jakarta.el-api-4.0.0.jar t
  inylog-impl-2.7.0.jar eventstudio-4.0.1.jar javafx-graphics-23.0.2.jar 
  bcprov-jdk18on-1.80.jar fontbox-2.0.28.jar imageio-metadata-3.11.0.jar 
- jakarta.validation-api-3.0.2.jar ikonli-boxicons-pack-12.4.0.jar icu4j-
- 71.1.jar sambox-3.0.23.jar jackson-annotations-2.18.3.jar javafx-media-
+ jakarta.validation-api-3.0.2.jar icu4j-71.1.jar ikonli-boxicons-pack-12
+ .4.0.jar sambox-3.0.23.jar jackson-annotations-2.18.3.jar javafx-media-
  23.0.2-win.jar thumbnailator-0.4.20.jar jcl-over-slf4j-2.0.17.jar sejda
  -image-writers-5.1.10.jar imageio-jpeg-3.11.0.jar sejda-fonts-5.1.10.ja
  r tinylog-api-2.7.0.jar bcpkix-jdk18on-1.80.jar common-io-3.11.0.jar ja
@@ -15,10 +15,10 @@ Class-Path: javafx-base-23.0.2.jar common-lang-3.11.0.jar bcmail-jdk18on
  nli-unicons-pack-12.4.0.jar sejda-model-5.1.10.jar sejda-commons-3.0.0.
  jar ikonli-core-12.4.0.jar jboss-logging-3.4.1.Final.jar jackson-core-2
  .18.3.jar javafx-base-23.0.2-win.jar pdfsam-injector-5.0.0.jar metadata
- -extractor-2.19.0.jar slf4j-tinylog-2.7.0.jar commons-io-2.19.0.jar hib
- ernate-validator-7.0.5.Final.jar common-image-3.11.0.jar jackson-dataty
- pe-jdk8-2.18.3.jar classmate-1.5.1.jar commons-lang3-3.17.0.jar sejda-c
- ore-5.1.10.jar imageio-core-3.11.0.jar slf4j-api-2.0.17.jar jakarta.inj
- ect-api-2.0.1.jar xmpcore-6.1.11.jar sejda-io-4.0.0.M4.jar imageio-tiff
- -3.11.0.jar bcutil-jdk18on-1.80.jar javafx-controls-23.0.2.jar
+ -extractor-2.19.0.jar commons-io-2.19.0.jar hibernate-validator-7.0.5.F
+ inal.jar common-image-3.11.0.jar jackson-datatype-jdk8-2.18.3.jar class
+ mate-1.5.1.jar commons-lang3-3.17.0.jar sejda-core-5.1.10.jar imageio-c
+ ore-3.11.0.jar slf4j-api-2.0.17.jar jakarta.inject-api-2.0.1.jar xmpcor
+ e-6.1.11.jar sejda-io-4.0.0.M4.jar imageio-tiff-3.11.0.jar bcutil-jdk18
+ on-1.80.jar javafx-controls-23.0.2.jar
 

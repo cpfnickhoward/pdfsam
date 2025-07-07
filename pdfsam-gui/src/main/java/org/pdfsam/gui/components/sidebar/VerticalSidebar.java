@@ -79,7 +79,7 @@ public class VerticalSidebar extends BorderPane {
         setVgrow(spacer, Priority.ALWAYS);
         buttons.getChildren().add(spacer);
         addButton(workspaceButton, expandButton);
-        addButton(logButton, expandButton);
+        // addButton(logButton, expandButton);
         addButton(newsButton, expandButton);
         addButton(aboutItem, expandButton);
         addButton(preferenceItem, expandButton);

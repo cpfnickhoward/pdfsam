@@ -16,18 +16,14 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.pdfsam.model.update;
+//package org.pdfsam.model.update;
 
-import static org.sejda.commons.util.RequireUtils.requireNotBlank;
+//import static org.sejda.commons.util.RequireUtils.requireNotBlank;
 
 /**
  * Event to notify a new version available.
  *
  * @author Andrea Vacondio
  */
-public record UpdateAvailableEvent(String availableVersion) {
-
-     public UpdateAvailableEvent {
-     requireNotBlank(availableVersion, "Available version cannot be empty");
-     }
-}
+//public record UpdateAvailableEvent(String availableVersion) {
+//}

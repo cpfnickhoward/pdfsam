@@ -23,7 +23,7 @@ import org.pdfsam.core.AppBrand;
 import org.pdfsam.eventstudio.annotation.EventListener;
 import org.pdfsam.injector.Auto;
 import org.pdfsam.model.update.NoUpdateAvailable;
-import org.pdfsam.model.update.UpdateAvailableEvent;
+//import org.pdfsam.model.update.UpdateAvailableEvent;
 import org.pdfsam.model.update.UpdateCheckRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
