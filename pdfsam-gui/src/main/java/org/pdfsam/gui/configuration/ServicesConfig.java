@@ -20,17 +20,11 @@ package org.pdfsam.gui.configuration;
 
 import org.pdfsam.injector.Components;
 import org.pdfsam.injector.Provides;
-import org.pdfsam.service.news.DefaultNewsService;
-import org.pdfsam.service.news.NewsController;
-import org.pdfsam.service.news.NewsService;
 import org.pdfsam.service.pdf.BookmarksLevelSAMBoxLoader;
 import org.pdfsam.service.pdf.DefaultPdfLoadService;
 import org.pdfsam.service.pdf.DefaultSAMBoxLoader;
 import org.pdfsam.service.pdf.PdfLoadController;
 import org.pdfsam.service.pdf.PdfLoadService;
-import org.pdfsam.service.premium.DefaultPremiumToolsService;
-import org.pdfsam.service.premium.PremiumToolsController;
-import org.pdfsam.service.premium.PremiumToolsService;
 import org.pdfsam.service.task.TaskExecutionController;
 import org.pdfsam.service.tool.DefaultUsageService;
 import org.pdfsam.service.tool.UsageService;
@@ -42,9 +36,6 @@ import org.pdfsam.service.ui.StageService;
 import org.pdfsam.service.ui.StageServiceController;
 import org.pdfsam.service.ui.WorkspaceController;
 import org.pdfsam.service.ui.WorkspaceService;
-import org.pdfsam.service.update.DefaultUpdateService;
-import org.pdfsam.service.update.UpdateService;
-import org.pdfsam.service.update.UpdatesController;
 import org.sejda.core.service.DefaultTaskExecutionService;
 import org.sejda.core.service.TaskExecutionService;
 
@@ -53,24 +44,13 @@ import java.util.Arrays;
 /**
  * @author Andrea Vacondio
  */
-@Components({ NewsController.class, PdfLoadController.class,
-        TaskExecutionController.class, WorkspaceController.class, StageServiceController.class,
-        UpdatesController.class })
+@Components({ PdfLoadController.class,
+        TaskExecutionController.class, WorkspaceController.class, StageServiceController.class})
 public class ServicesConfig {
-
-    @Provides
-    NewsService news(DefaultNewsService news) {
-        return news;
-    }
 
     @Provides
     PdfLoadService loadService() {
         return new DefaultPdfLoadService(Arrays.asList(new DefaultSAMBoxLoader(), new BookmarksLevelSAMBoxLoader()));
-    }
-
-    @Provides
-    PremiumToolsService premiumTools(DefaultPremiumToolsService service) {
-        return service;
     }
 
     @Provides
@@ -98,8 +78,4 @@ public class ServicesConfig {
         return service;
     }
 
-    @Provides
-    UpdateService news(DefaultUpdateService updates) {
-        return updates;
-    }
 }
