@@ -27,8 +27,7 @@ import static org.sejda.commons.util.RequireUtils.requireNotBlank;
  */
 public record NativeOpenUrlRequest(String url) {
 
-    public NativeOpenUrlRequest {
-        requireNotBlank(url, "URL cannot be blank");
-    }
-
+    // public NativeOpenUrlRequest {
+    // requireNotBlank(url, "URL cannot be blank");
+    // }
 }

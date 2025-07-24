@@ -49,36 +49,39 @@ public class News extends VBox {
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM);
 
     News(NewsData data) {
-        this.getStyleClass().add("news-box");
-        TextFlow flow = new TextFlow();
-        if (data.important()) {
-            Text megaphone = FontIcon.of(UniconsLine.MEGAPHONE);
-            megaphone.getStyleClass().clear();
-            megaphone.getStyleClass().add("news-box-title-important");
-            flow.getChildren().addAll(megaphone, new Text(" "));
-        }
+        // this.getStyleClass().add("news-box");
+        // TextFlow flow = new TextFlow();
+        // if (data.important()) {
+        // Text megaphone = FontIcon.of(UniconsLine.MEGAPHONE);
+        // megaphone.getStyleClass().clear();
+        // megaphone.getStyleClass().add("news-box-title-important");
+        // flow.getChildren().addAll(megaphone, new Text(" "));
+        // }
 
-        Text titleText = new Text(data.title() + System.lineSeparator());
-        titleText.setOnMouseClicked(e -> eventStudio().broadcast(new NativeOpenUrlRequest(data.link())));
-        titleText.getStyleClass().add("news-box-title");
+        // Text titleText = new Text(data.title() + System.lineSeparator());
+        // // titleText.setOnMouseClicked(e -> eventStudio().broadcast(new
+        // // NativeOpenUrlRequest(data.link())));
+        // titleText.getStyleClass().add("news-box-title");
 
-        Text contentText = new Text(data.content());
-        contentText.setTextAlignment(TextAlignment.JUSTIFY);
-        contentText.getStyleClass().add("news-content");
+        // Text contentText = new Text(data.content());
+        // contentText.setTextAlignment(TextAlignment.JUSTIFY);
+        // contentText.getStyleClass().add("news-content");
 
-        flow.getChildren().addAll(titleText, contentText);
-        flow.setTextAlignment(TextAlignment.JUSTIFY);
-        Label labelDate = new Label(FORMATTER.format(data.date()), FontIcon.of(UniconsLine.CLOCK));
-        labelDate.setPrefWidth(Integer.MAX_VALUE);
-        HBox.setHgrow(labelDate, Priority.ALWAYS);
-        HBox bottom = new HBox(labelDate);
-        bottom.setAlignment(Pos.CENTER_LEFT);
-        bottom.getStyleClass().add("news-box-footer");
-        if (isNotBlank(data.link())) {
-            Button link = UrlButton.urlButton(null, data.link(), UniconsLine.EXTERNAL_LINK_ALT,
-                    Style.NEWS_BUTTON.css());
-            bottom.getChildren().add(link);
-        }
-        getChildren().addAll(flow, bottom);
+        // flow.getChildren().addAll(titleText, contentText);
+        // flow.setTextAlignment(TextAlignment.JUSTIFY);
+        // Label labelDate = new Label(FORMATTER.format(data.date()),
+        // FontIcon.of(UniconsLine.CLOCK));
+        // labelDate.setPrefWidth(Integer.MAX_VALUE);
+        // HBox.setHgrow(labelDate, Priority.ALWAYS);
+        // HBox bottom = new HBox(labelDate);
+        // bottom.setAlignment(Pos.CENTER_LEFT);
+        // bottom.getStyleClass().add("news-box-footer");
+        // if (isNotBlank(data.link())) {
+        // Button link = UrlButton.urlButton(null, data.link(),
+        // UniconsLine.EXTERNAL_LINK_ALT,
+        // Style.NEWS_BUTTON.css());
+        // bottom.getChildren().add(link);
+        // }
+        // getChildren().addAll(flow, bottom);
     }
 }

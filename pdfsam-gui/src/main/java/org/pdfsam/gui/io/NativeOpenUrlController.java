@@ -45,26 +45,28 @@ public class NativeOpenUrlController {
         eventStudio().addAnnotatedListeners(this);
     }
 
-    @EventListener
-    public void openUrl(NativeOpenUrlRequest event) {
-        if (nonNull(event.url()) && !event.url().isBlank()) {
-            try {
-                services.showDocument(event.url());
-            } catch (NullPointerException npe) {
-                // service delegate can be null but there's no way to check it first so we have to catch the npe
-                fallbackOpen(event);
-            }
-        }
-    }
+    // @EventListener
+    // public void openUrl(NativeOpenUrlRequest event) {
+    // if (nonNull(event.url()) && !event.url().isBlank()) {
+    // try {
+    // services.showDocument(event.url());
+    // } catch (NullPointerException npe) {
+    // // service delegate can be null but there's no way to check it first so we
+    // have to catch the npe
+    // fallbackOpen(event);
+    // }
+    // }
+    // }
 
-    private void fallbackOpen(NativeOpenUrlRequest event) {
-        LOG.info("Unable to open url using HostServices, trying fallback");
-        try {
-            Runtime.getRuntime().exec(getOpenCmd(event.url()));
-        } catch (IOException e) {
-            LOG.warn("Unable to open '" + event.url() + "', please copy and paste the url to your browser", e);
-        }
-    }
+    // private void fallbackOpen(NativeOpenUrlRequest event) {
+    // LOG.info("Unable to open url using HostServices, trying fallback");
+    // try {
+    // Runtime.getRuntime().exec(getOpenCmd(event.url()));
+    // } catch (IOException e) {
+    // LOG.warn("Unable to open '" + event.url() + "', please copy and paste the url
+    // to your browser", e);
+    // }
+    // }
 
     private static String getOpenCmd(String url) throws IOException {
         String os = System.getProperty("os.name").toLowerCase();

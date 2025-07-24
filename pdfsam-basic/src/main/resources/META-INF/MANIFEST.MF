@@ -1,24 +1,24 @@
 Manifest-Version: 1.0
 Main-Class: org.pdfsam.basic.App
-Class-Path: bcpkix-jdk18on-1.80.jar jakarta.el-4.0.2.jar ikonli-unicons-
- pack-12.4.0.jar jackson-datatype-jdk8-2.18.3.jar jackson-annotations-2.
- 18.3.jar sejda-image-writers-5.1.10.jar javafx-base-23.0.2-win.jar sejd
- a-io-4.0.0.M4.jar common-image-3.11.0.jar jackson-databind-2.18.3.jar x
- mpcore-6.1.11.jar commons-io-2.19.0.jar commons-lang3-3.17.0.jar sejda-
- commons-3.0.0.jar sejda-core-5.1.10.jar sambox-3.0.23.jar jakarta.injec
- t-api-2.0.1.jar common-io-3.11.0.jar bcprov-jdk18on-1.80.jar imageio-me
- tadata-3.11.0.jar metadata-extractor-2.19.0.jar slf4j-api-2.0.17.jar ja
- vafx-graphics-23.0.2-win.jar javafx-base-23.0.2.jar tinylog-api-2.7.0.j
- ar sejda-conversion-5.1.10.jar ikonli-boxicons-pack-12.4.0.jar javafx-c
- ontrols-23.0.2.jar sejda-model-5.1.10.jar imageio-core-3.11.0.jar jboss
- -logging-3.4.1.Final.jar imageio-tiff-3.11.0.jar pdfsam-injector-5.0.0.
- jar sejda-sambox-5.1.10.jar fontbox-2.0.28.jar thumbnailator-0.4.20.jar
-  javafx-controls-23.0.2-win.jar slf4j-tinylog-2.7.0.jar jackson-datatyp
- e-jsr310-2.18.3.jar jackson-core-2.18.3.jar javafx-graphics-23.0.2.jar 
- classmate-1.5.1.jar jakarta.el-api-4.0.0.jar javafx-media-23.0.2-win.ja
- r jakarta.validation-api-3.0.2.jar bcutil-jdk18on-1.80.jar ikonli-core-
- 12.4.0.jar sejda-fonts-5.1.10.jar icu4j-71.1.jar jcl-over-slf4j-2.0.17.
- jar eventstudio-4.0.1.jar common-lang-3.11.0.jar javafx-media-23.0.2.ja
- r ikonli-javafx-12.4.0.jar bcmail-jdk18on-1.80.jar tinylog-impl-2.7.0.j
- ar hibernate-validator-7.0.5.Final.jar imageio-jpeg-3.11.0.jar
+Class-Path: jackson-core-2.18.3.jar ikonli-javafx-12.4.0.jar commons-lan
+ g3-3.17.0.jar javafx-base-23.0.2-win.jar commons-io-2.19.0.jar javafx-m
+ edia-23.0.2.jar imageio-jpeg-3.11.0.jar common-io-3.11.0.jar pdfsam-inj
+ ector-5.0.0.jar javafx-controls-23.0.2.jar xmpcore-6.1.11.jar slf4j-tin
+ ylog-2.7.0.jar hibernate-validator-7.0.5.Final.jar javafx-graphics-23.0
+ .2.jar sejda-conversion-5.1.10.jar jackson-databind-2.18.3.jar thumbnai
+ lator-0.4.20.jar bcprov-jdk18on-1.80.jar imageio-metadata-3.11.0.jar ja
+ karta.el-4.0.2.jar javafx-media-23.0.2-win.jar ikonli-boxicons-pack-12.
+ 4.0.jar sejda-core-5.1.10.jar sejda-sambox-5.1.10.jar bcmail-jdk18on-1.
+ 80.jar jboss-logging-3.4.1.Final.jar imageio-tiff-3.11.0.jar jakarta.in
+ ject-api-2.0.1.jar jakarta.validation-api-3.0.2.jar sejda-model-5.1.10.
+ jar javafx-controls-23.0.2-win.jar tinylog-api-2.7.0.jar jackson-dataty
+ pe-jdk8-2.18.3.jar metadata-extractor-2.19.0.jar classmate-1.5.1.jar ev
+ entstudio-4.0.1.jar jackson-datatype-jsr310-2.18.3.jar ikonli-unicons-p
+ ack-12.4.0.jar common-lang-3.11.0.jar jackson-annotations-2.18.3.jar jc
+ l-over-slf4j-2.0.17.jar imageio-core-3.11.0.jar bcutil-jdk18on-1.80.jar
+  ikonli-core-12.4.0.jar jakarta.el-api-4.0.0.jar sejda-image-writers-5.
+ 1.10.jar sejda-fonts-5.1.10.jar icu4j-71.1.jar javafx-base-23.0.2.jar f
+ ontbox-2.0.28.jar sejda-io-4.0.0.M4.jar common-image-3.11.0.jar sambox-
+ 3.0.23.jar slf4j-api-2.0.17.jar bcpkix-jdk18on-1.80.jar sejda-commons-3
+ .0.0.jar tinylog-impl-2.7.0.jar javafx-graphics-23.0.2-win.jar
 
